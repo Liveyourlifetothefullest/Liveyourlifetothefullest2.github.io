@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>11.18 (1)</title>
+	<style type="text/css">
+		#Header {background-color: lightblue;
+  					color: black;
+  					text-align: center;
+  					font-size:15pt}
+
+  		.topic {background-color: Orange;
+  				color: white;} 
+  		h1 {text-decoration: underline overline}
+  		p,i{font-size:30pt}
+  		p i{font-size:10pt}
+  		intro {border: 1px solid black;
+  				color:dodgerblue;}
+  		.extra intro {color:inherit;}
+	</style>
+</head>
+<body>
+
+<h1 id="Header">New <i>HTML5 Input Types</i> Demo </h1>
+
+<p>This form demonstrates <intro>the new HTML5 input types and the placeholder</intro> , required and autofoocuus attributes. </p>
+
+<p class="extra" style="color:forestgreen;">This form demonstrates <intro>the new HTML5 input types and the placeholder</intro> , required and autofoocuus attributes. </p>
+
+
+<form>
+
+<p class="topic">Color: 
+	<input type="color"  autofocus  />(Hexadecimal code <i>such as #ADD8E6</i>)
+</p>
+
+<p class="topic">Date: 
+	<input type="date" id="date" name="date"><i>(yyyy-mm-dd)</i>
+</p>
+
+<p class="topic">E-mail: 
+    	<input type="email" id="email" name="email" placeholder="name@domain.com" required>(name@domain.com)
+</p>
+
+<p class="topic">Number: 
+  		<input type="number" id="number" name="number" min="0" max="7" value="4">(Enter a number <i>between 0 and 7</i>)
+</p>
+
+<p class="topic">Range: 
+ 		0<input type="range" id="range" name="range" min="0" max="20">20
+</p>
+
+<p class="topic">Search: 
+  		<input type="search" id="search" name="search" placeholder="seach query">
+</p>
+
+<p class="topic">Time:
+  		<input type="time" id="time" name="time"><i>(hh:mm)</i>
+</p>
+
+<input type="submit" value="Submit">
+<input type="reset" value="Clear">
+
+</form>
+
+</body>
+
+</html>
