@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Web page</title>
+	<link href='https://fonts.googleapis.com/css?family=Blinker' rel='stylesheet'>
+	<style type="text/css">
+		.topic{display: flex;
+ 		       justify-content: center;}
+ 		body {font-family: 'Blinker';font-size: 22px;}
+ 		table{font-size: 19.5px;}
+      .black {
+	          display: none;
+	          position: absolute;
+	          top: 0%;
+	          left: 0%;
+	          width: 100%;
+	          height: 130%;
+	          background-color:#3e497a;
+	          z-index: 1;
+	          opacity: .80;}
+.white1 {
+	border-radius: 20px;
+	display: none;
+	position: absolute;
+	top: 35%;
+	right: 18.5%;
+	background-color: white;
+	z-index: 2;
+	overflow: auto;
+}  
+
+.white2 {
+	border-radius: 20px;
+	display: none;
+	position: absolute;
+	top: 35%;
+	right: 23%;
+	background-color: white;
+	z-index: 2;
+	overflow: auto;
+}
+
+.white3 {
+	border-radius: 20px;
+	display: none;
+	position: absolute;
+	top: 35%;
+	left: 0%;
+	background-color: white;
+	z-index: 2;
+	overflow: auto;
+}
+
+.white4 {
+	border-radius: 20px;
+	display: none;
+	position: absolute;
+	top: 35%;
+	right: 20%;
+	background-color: white;
+	z-index: 2;
+	overflow: auto;
+}
+
+.white5 {
+	border-radius: 20px;
+	display: none;
+	position: absolute;
+	top: 35%;
+	right: 18.5%;
+	background-color: white;
+	z-index: 2;
+	overflow: auto;
+}
+.white6 {
+	border-radius: 20px;
+	display: none;
+	position: absolute;
+	top: 60%;
+	right: 0%;
+	background-color: white;
+	z-index: 2;
+	overflow: auto;
+}  
+
+	</style>
+</head>
+
+<body>
+
+<div>
+	<div><img src="topic.png" alt="topic" style="display: block;margin: auto;"/></div>
+	<div class="topic"><h3>110102050 教育二 陳為政 110506026 日文二 葉玟君 111306042 資管一 蔡美感</h3></div>
+</div>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+	    <td align="center"><img src="file1.png" alt="file" width="230px" height="200px" id="f1" onclick="open1(this)" /></td>
+		<td align="center"><img src="file2.png" alt="file" width="230px" height="200px" id="f2" onclick="open2(this)"/></td>
+		<td align="center"><img src="file3.png" alt="file" width="230px" height="200px" id="f3" onclick="open3(this)"/></td>
+		<td align="center"><img src="file4.png" alt="file" width="230px" height="200px" id="f4" onclick="open4(this)"/></td>
+		<td align="center"><img src="file5.png" alt="file" width="230px" height="200px" id="f5" onclick="open5(this)"/></td>
+	</tr>
+
+	<tr>
+		<td align="center">Background introduction</td>
+		<td align="center">What is content filter?</td>
+		<td align="center">Comparison of content filter<br>between different browser</td>
+		<td align="center">Future and recommendation</td>
+		<td align="center">Recommend application</td>
+	</tr>
+</table>
+
+<div id="back" class="white1"><img src="background.png" alt="Background introduction" /></div>
+<div id="what" class="white2"><img src="what.png" alt="What is content filter?" /></div>
+<div id="com" class="white3"><img src="compare.png" alt="Comparison of content filter between different browser" /></div>
+<div id="fut" class="white4"><img src="future.png" alt="Future and recommendation" /></div>
+<div id="reco" class="white5"><img src="recommend.png" alt="Recommend application" /></div>
+<div id="cap" class="white6"><img src="caption.png" alt="Caption" width="461px" height="405px"/></div>
+
+
+<div id="fade1" class="black" onclick="close1()"></div>
+<div id="fade2" class="black" onclick="close2()"></div>
+<div id="fade3" class="black" onclick="close3()"></div>
+<div id="fade4" class="black" onclick="close4()"></div>
+<div id="fade5" class="black" onclick="close5()"></div>
+
+<script type="text/javascript">
+	function open1(obj) {
+		var click1= "f1";
+	                 
+	    switch(obj.id)
+	    {case"f1":
+	             click1="back";
+	             break;}
+	                   document.getElementById(click1).style.display="block";
+	                   document.getElementById('fade1').style.display="block";}
+	function close1(){document.getElementById('back').style.display="none";
+					  document.getElementById('fade1').style.display="none";	}
+
+	function open2(obj) {
+		var click2= "f2";
+	                 
+	    switch(obj.id)
+	    {case"f2":
+	             click2="what";
+	             break;}
+	                   document.getElementById(click2).style.display="block";
+	                   document.getElementById('fade2').style.display="block";}
+	function close2(){document.getElementById('what').style.display="none";
+					  document.getElementById('fade2').style.display="none";	}	
+
+	function open3(obj) {
+		var click3= "f3";            
+	    switch(obj.id)
+	    {case"f3":
+	             click3="com";
+	             break;}
+	                   document.getElementById(click3).style.display="block";
+	                   document.getElementById('cap').style.display="block";
+	                   document.getElementById('fade3').style.display="block";}
+	function close3(){document.getElementById('com').style.display="none";
+					  document.getElementById('cap').style.display="none";
+					  document.getElementById('fade3').style.display="none";	}
+
+	function open4(obj) {
+		var click4= "f4";
+	                 
+	    switch(obj.id)
+	    {case"f4":
+	             click4="fut";
+	             break;}
+	                   document.getElementById(click4).style.display="block";
+	                   document.getElementById('fade4').style.display="block";}
+	function close4(){document.getElementById('fut').style.display="none";
+					  document.getElementById('fade4').style.display="none";	}
+					  
+	function open5(obj) {
+		var click5= "f5";
+	                 
+	    switch(obj.id)
+	    {case"f5":
+	             click5="reco";
+	             break;}
+	                   document.getElementById(click5).style.display="block";
+	                   document.getElementById('fade5').style.display="block";}
+	function close5(){document.getElementById('reco').style.display="none";
+					  document.getElementById('fade5').style.display="none";	}				  				  				  			  
+</script>					  
+
+</body>
+
+</html>
+
