@@ -1,0 +1,112 @@
+{
+  margin-left : auto;
+  margin-right : auto
+  font-family:'Times New Roman', Times, serif;
+}
+
+.input1{
+  width: 100%;
+}
+
+.input2{
+  width: 37%;
+  float: left;
+}
+
+.input3{
+display: flex;
+justify-content: space-around;
+}
+
+.input4{
+  width: 80%;
+}
+
+.inputfield{
+  margin-bottom:3%;
+  padding-right: 15%;
+  display: flex;
+}
+
+.inputfield label{
+   margin-right: 40px;
+   margin-left: 10px;
+   font-size: 15px;
+}
+.inputfield .input {
+  width: 100%;
+  border: 1px solid;
+  font-size: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 3px;
+}
+
+.inputfield label2{
+   margin-right: 4.2%;
+   margin-bottom: 20%;
+   font-size: 15px;
+}
+
+.inputfield2{
+  margin-bottom:3%;
+  display: flex;
+}
+
+.inputfield2 label{
+   margin-right: 40px;
+   margin-left: 10px;
+   font-size: 15px;
+}
+
+.inputfield2 .input {
+  width: 100%;
+  border: 1px solid;
+  font-size: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 3px;
+}
+
+
+
+.inputfield .textarea{
+  width: 100%;
+  border: 1px solid;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  float: left;
+}
+
+#photo label {
+  position:absolute;
+  margin: 10px -30% 10px 0%;
+}
+
+img{vertical-align: top;
+  width:95%;
+  height: 80%;
+  display: block;
+  float: right;}
+
+.wrapper{
+  border-style : solid;
+  background-color: #b9e73f33;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5%;}
+
+@media screen and (min-width: 500px) {body {background-color: white;
+                                            background-image: url('sea creatures.jpg');
+                                            background-repeat: repeat;
+                                            background-attachment: fixed;
+                                            color: brown;};
+@media print {body{color: royalblue;
+                   border: 1px solid black;}
